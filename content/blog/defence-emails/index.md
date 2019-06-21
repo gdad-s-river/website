@@ -12,7 +12,7 @@ author: 'Arihant Verma'
 
 > Photo by Austin Distel on Unsplash
 
-I have worked in two companies after I graduated in 2015. In both companies ( less in the second one, mostly from teams in Gurgaon ), I've seen a culture of defending in emails in sly and covert manner. The defending automatically takes away a chance for people to feel that they are working on a product together. It starts weird blame games, which does no good to anybody. However it does open a new avenue to write about — bitching about them. This post is a light weight bitching post. If you know a fun word that replaces what 'bitching' means and infers, please let me know and I'll replace it.
+I have worked in two companies since after I graduated in 2015. In both companies ( less in the second one, mostly from teams in Gurgaon ), I've seen a culture of defending in emails in sly and covert manner. The defending automatically takes away a chance for people to feel that they are working on a product together. It starts weird blame games, which does no good to anybody. However it does open a new avenue to write about grouse about them. This post is a light weight grousing post.
 
 Read this email I got in my work inbox today —
 
@@ -32,9 +32,9 @@ The Reviews and Rating's API fetches user generated questions and answers ( like
 
 Because the app server was not anticipating anything like this ( our mistake ), the server was letting that request pass through.
 
-We were doing a blunder on our app server — letting any kind of requests passing through that path. In other words that path should have been not strict.
+We were doing a blunder on our app server — letting any kind of requests pass through that path. In other words that path should have been not strict.
 
-Strict path means something like — if a user is visiting a **`facebook.com/<username>`**, it should open your profile and timeline page. But if a user visits **`facebook.com/<username>/<gibberish>`**, the facebook server should either re direct the user to **`facebook.com/<username>/`** or redirect to a 'Not Found What You Are Looking For' page. Our app server was letting the gibberish kind of request in, doing some weird stuff in the background ( which was harming us, costing us thousands of rupees ).
+Strict path means something like — if a user is visiting a **`facebook.com/<username>`**, it should open that profile and timeline page. But if a user visits **`facebook.com/<username>/<gibberish>`**, the facebook server should either re direct the user to **`facebook.com/<username>/`** or redirect to a 'Not Found What You Are Looking For' page. Our app server was letting the gibberish kind of request in, doing some weird stuff in the background ( which was harming us, costing us thousands of rupees ).
 
 The weird stuff was that it was causing resetting of a crucial cookie used to evaluate promo codes for our users. Given it was bad on our part to let scrupulous requests come to our app server, it wasn't as big a blunder as the `'null'` thing I explained above. Giving `'null'` as a response to anything in a JSON response is preposterous and unacceptable.
 
@@ -61,9 +61,9 @@ To a non tech person who doesn't know what a JSON object looks like, following m
 }
 ```
 
-He asked me what _level_ of the response do I want to not have `'null'` as images' value anymore. I got so confused that I had to ask him what his question was. I also got confused about the cellular network. I thought the network was wobbly. It wasn't. He was speaking as if he was a member of a street jumping gang. I had to guess from how his words sounded, and match it up with the vocabulary I have in my mind. Phonetics helped.
+He asked me what _level_ of the response do I want to not have `'null'` as images' value anymore. I got so confused that I had to ask him what his question was. I also got confused about the cellular network. I thought the network was wobbly. It wasn't. He sounded as if he was a member of a street jumping gang. I had to guess from how his words sounded, and match it up with the vocabulary I have in my mind. Phonetics helped.
 
-To a non tech person — this is the most disastrous response, a person responsible for sending any kind of data can ask. `'null'` is like talking about sex in India. It's punishable. But unlike talking about sex, or kissing in public, it should be.
+To a non tech person — this is the most disastrous data response, a person responsible for sending any kind of data can send. `'null'` is like talking about sex in India. It's worth punishing. Unlike talking about sex, or kissing in public, it should be.
 
 It's one of the reasons I have not particularly liked working in a tech company in India. Work feels like work. I'd like to work at a place, where work, and the workplace and ALL the people I'd have to talk to at work, feel like home. Fortunately at least the team I'm a core member of, is the most fun team I could ever have asked for.
 
