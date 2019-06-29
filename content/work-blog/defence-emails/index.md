@@ -32,7 +32,7 @@ The Reviews and Rating's API fetches user generated questions and answers ( like
 
 Because the app server was not anticipating anything like this ( our mistake ), the server was letting that request pass through.
 
-We were doing a blunder on our app server — letting any kind of requests pass through that path. In other words that path should have been not strict.
+We were doing a blunder on our app server — letting any kind of requests pass through that path. In other words that path should have been strict.
 
 Strict path means something like — if a user is visiting a **`facebook.com/<username>`**, it should open that profile and timeline page. But if a user visits **`facebook.com/<username>/<gibberish>`**, the facebook server should either re direct the user to **`facebook.com/<username>/`** or redirect to a 'Not Found What You Are Looking For' page. Our app server was letting the gibberish kind of request in, doing some weird stuff in the background ( which was harming us, costing us thousands of rupees ).
 
@@ -42,22 +42,23 @@ SS called me up to have the audacity to ask (this is how jugaadi we Indians are)
 
 To a non tech person who doesn't know what a JSON object looks like, following might be a JSON response of question asked by and the its answers –
 
-```javascript
+```json
 {
-	"question": "Why did you do that SS?",
-	"who_asked": "Asker's Name",
-	"asker_image": "null", // level 1
-	"client_answer": {
-		"client_image": "null", // level 2a
-		"client_name": "Major General"
-	},
-	"user_answers": {
-		"user_id_1": {
-			"user1_image": "null" // level 2b
-		},
-		"user_id_2": {
-			"user2_image": "null"
-	}
+  "question": "Why did you do that SS?",
+  "who_asked": "Asker's Name",
+  "asker_image": "null", ---> level 1
+  "client_answer": {
+    "client_image": "null", ---> level 2(a)
+    "client_name": "Major General"
+  },
+  "user_answers": {
+    "user_id_1": {
+      "user1_image": "null" ---> level 2(b)
+    },
+    "user_id_2": {
+      "user2_image": "null"
+    }
+  }
 }
 ```
 

@@ -1,17 +1,17 @@
-import React, { Fragment, useState, useEffect } from 'react'
-import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
+import { css, Global } from '@emotion/core'
 import { MDXProvider } from '@mdx-js/react'
+import { graphql } from 'gatsby'
 import { lighten } from 'polished'
-import { Global, css } from '@emotion/core'
-import { ThemeProvider, themes } from './Theming'
-import { bpMaxSM } from '../lib/breakpoints'
-import mdxComponents from './mdx'
-import Header from './Header'
-import reset from '../lib/reset'
-import { fonts } from '../lib/typography'
+import React, { Fragment, useEffect, useState } from 'react'
+import Helmet from 'react-helmet'
 import config from '../../config/website'
 import Footer from '../components/Footer'
+import { bpMaxSM } from '../lib/breakpoints'
+import reset from '../lib/reset'
+import { fonts } from '../lib/typography'
+import Header from './Header'
+import mdxComponents from './mdx'
+import { ThemeProvider, themes } from './Theming'
 
 const getGlobalStyles = theme => {
   return css`
@@ -111,7 +111,7 @@ const getGlobalStyles = theme => {
       font-size: 16px;
       padding: 10px;
       overflow-x: auto;
-      white-space: nowrap;
+      white-space: pre;
       /* Track */
       ::-webkit-scrollbar {
         width: 100%;

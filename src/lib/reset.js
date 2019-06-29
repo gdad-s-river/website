@@ -70,6 +70,8 @@ const resetStyles = () => {
     margin-top: 0;
     margin-bottom: 1rem;
     overflow: auto;
+		white-space: pre;
+		font-family: monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New";
   }
   figure {
     margin: 0 0 1rem 0;
