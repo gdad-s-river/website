@@ -20,6 +20,6 @@ I went upto the extent of not picking summoning calls for practice ( one of my c
 
 I just laughed it off, when I found on reaching the venue for practice, that she wasn't participating herself! I was mad for a second. But I can't stay mad for longer than that, it's a time waste. I'm being made a sheikh for a fashion show. The only reason I agreed to do it was because I might become a reason for people to laugh. That's a good reason.
 
-Also I got to meet a stunning, enchanting, charming woman. She was kind and offered us maggi. Helped a colleague who was struggling with the ramp wamp with a booster _if that doesn't happen, so what! we'll try something else then_. She was a Miss India contestant in some year. We couldn't take eyes off her ( I wasn't able to take eyes on her, I'm never able to even see a girl for a moment, in fear of being caught (for what?!) ).
+Also I got to meet a stunning, enchanting, charming woman. She was kind and offered us maggi. Helped a colleague who was struggling with the ramp walk with a booster _if that doesn't happen, so what! we'll try something else then_. She was a Miss India contestant in some year. We couldn't take eyes off her ( I wasn't able to take eyes on her, I'm never able to even see a girl for a moment, in fear of being caught (for what?!) ).
 
 https://www.instagram.com/p/BzkRpwkFQWg/
