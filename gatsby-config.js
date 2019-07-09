@@ -49,6 +49,14 @@ module.exports = {
               maxWidth: 1035,
             },
           },
+          {
+            resolve: `@raae/gatsby-remark-oembed`,
+            options: {
+              providers: {
+                include: ['Instagram', 'Twitter'],
+              },
+            },
+          },
         ],
       },
     },
