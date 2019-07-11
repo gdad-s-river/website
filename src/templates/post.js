@@ -14,6 +14,7 @@ import { fonts } from '../lib/typography'
 const figcaptionStyles = css({
   textAlign: 'center',
   background: 'antiquewhite',
+  padding: '10px',
 })
 export default function Post({
   data: { site, mdx },
