@@ -6,6 +6,7 @@ description: "This is what happened when I wasn't able to say no at work"
 categories: ['work']
 keywords: ['work', 'saying no', 'office']
 banner: './images/sign.jpg'
+bannerCaption: 'Photo by Austin Chan on Unsplash'
 published: true
 author: 'Arihant Verma'
 ---

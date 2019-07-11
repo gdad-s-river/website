@@ -6,11 +6,10 @@ description: 'The art of subtly defending oneself in emails'
 categories: ['work']
 keywords: ['email', 'defence', 'art']
 banner: './images/banner.jpg'
+bannerCaption: 'Photo by Austin Distel on Unsplash'
 published: true
 author: 'Arihant Verma'
 ---
-
-> Photo by Austin Distel on Unsplash
 
 I have worked in two companies since after I graduated in 2015. In both companies ( less in the second one, mostly from teams in Gurgaon ), I've seen a culture of defending in emails in sly and covert manner. The defending automatically takes away a chance for people to feel that they are working on a product together. It starts weird blame games, which does no good to anybody. However it does open a new avenue to write about grouse about them. This post is a light weight grousing post.
 

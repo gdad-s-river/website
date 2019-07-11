@@ -1,16 +1,20 @@
-import React from 'react'
+import { css } from '@emotion/core'
+import Container from 'components/Container'
+import SEO from 'components/SEO'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
-import SEO from 'components/SEO'
-import { css } from '@emotion/core'
-import Container from 'components/Container'
-import Layout from '../components/Layout'
-import { fonts } from '../lib/typography'
-import Share from '../components/Share'
+import React from 'react'
 import config from '../../config/website'
+import Layout from '../components/Layout'
+import Share from '../components/Share'
 import { bpMaxSM } from '../lib/breakpoints'
+import { fonts } from '../lib/typography'
 
+const figcaptionStyles = css({
+  textAlign: 'center',
+  background: 'antiquewhite',
+})
 export default function Post({
   data: { site, mdx },
   pageContext: { next, prev },
@@ -19,6 +23,7 @@ export default function Post({
   const date = mdx.frontmatter.date
   const title = mdx.frontmatter.title
   const banner = mdx.frontmatter.banner
+  const bannerCaption = mdx.frontmatter.bannerCaption
 
   return (
     <Layout site={site} frontmatter={mdx.frontmatter}>
@@ -67,10 +72,15 @@ export default function Post({
                 }
               `}
             >
-              <Img
-                sizes={banner.childImageSharp.fluid}
-                alt={site.siteMetadata.keywords.join(', ')}
-              />
+              <figure>
+                <Img
+                  sizes={banner.childImageSharp.fluid}
+                  alt={site.siteMetadata.keywords.join(', ')}
+                />
+                <figcaption css={figcaptionStyles}>
+                  {!!bannerCaption && bannerCaption}
+                </figcaption>
+              </figure>
             </div>
           )}
           <br />
@@ -107,6 +117,7 @@ export const pageQuery = graphql`
             }
           }
         }
+        bannerCaption
         slug
         keywords
       }

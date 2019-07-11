@@ -1,12 +1,12 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
 import { css } from '@emotion/core'
 import Container from 'components/Container'
-import SEO from '../components/SEO'
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import React from 'react'
 import Layout from '../components/Layout'
 import Link from '../components/Link'
-import { bpMaxSM, bpMaxMD } from '../lib/breakpoints'
+import SEO from '../components/SEO'
+import { bpMaxMD, bpMaxSM } from '../lib/breakpoints'
 
 const Blog = ({
   data: { site, allMdx },
